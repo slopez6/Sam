@@ -53,7 +53,7 @@ public class Contribuyente implements Serializable {
     private String representanteLegal;
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
     @Column(name = "RENTA_ANUAL")
-    private BigDecimal rentaAnual;
+    private double rentaAnual;
     @Size(max = 10)
     @Column(name = "FECHA_REGISTRO")
     private String fechaRegistro;
@@ -100,11 +100,11 @@ public class Contribuyente implements Serializable {
         this.representanteLegal = representanteLegal;
     }
 
-    public BigDecimal getRentaAnual() {
+    public double getRentaAnual() {
         return rentaAnual;
     }
 
-    public void setRentaAnual(BigDecimal rentaAnual) {
+    public void setRentaAnual(double rentaAnual) {
         this.rentaAnual = rentaAnual;
     }
 
