@@ -13,6 +13,7 @@ import javax.persistence.EntityManager;
  */
 public class Mante {
     
+    
      public void guardar(Contribuyente co) {
         EntityManager em = JpaUtil.getEntityManagerFactory().createEntityManager();
         int flag = 0;
