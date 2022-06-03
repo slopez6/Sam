@@ -14,6 +14,18 @@ import javax.persistence.EntityManager;
 public class Mante {
     
     
+    public static void main(String[] args) {
+        
+        Mante ma = new Mante();
+        
+        
+        
+        //ma.eliminar("6666-666666-666-6");
+        
+        
+        
+    }
+    
      public void guardar(Contribuyente co) {
         EntityManager em = JpaUtil.getEntityManagerFactory().createEntityManager();
         int flag = 0;
